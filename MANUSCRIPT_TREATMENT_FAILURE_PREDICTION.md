@@ -125,7 +125,7 @@ All analyses were performed in Python 3.9 using:
 
 ### Data Availability
 
-All data are publicly available from GEO (GSE89403). Analysis code is available at [GitHub repository to be added].
+All data are publicly available from GEO (GSE89403). Analysis code is available at https://github.com/hssling/TB_Treatment_Failure_Prediction_by_Transcriptomics
 
 ### Ethical Approval
 
@@ -163,16 +163,16 @@ The severe class imbalance (35:1 ratio) necessitated specialized handling during
 
 | Rank | Gene ID | Mean |SHAP| | Gene Symbol | Known Function |
 |------|---------|-------------|-------------|----------------|
-| 1 | ENSG00000135093 | 1.369 | [To be mapped] | Immune response |
-| 2 | ENSG00000151952 | 0.655 | [To be mapped] | Cell signaling |
-| 3 | ENSG00000182809 | 0.500 | [To be mapped] | Metabolic regulation |
-| 4 | ENSG00000185024 | 0.456 | [To be mapped] | Inflammation |
-| 5 | ENSG00000198874 | 0.391 | [To be mapped] | Oxidative stress |
-| 6 | ENSG00000067365 | 0.364 | [To be mapped] | T-cell function |
-| 7 | ENSG00000101181 | 0.302 | [To be mapped] | Cytokine signaling |
-| 8 | ENSG00000197694 | 0.289 | [To be mapped] | Apoptosis |
-| 9 | ENSG00000100473 | 0.271 | [To be mapped] | Cell cycle |
-| 10 | ENSG00000138758 | 0.238 | [To be mapped] | Transcription factor |
+| 1 | ENSG00000135093 | 1.369 | USP30 | Ubiquitin-specific protease 30 |
+| 2 | ENSG00000151952 | 0.655 | TMEM132D | Transmembrane protein 132D |
+| 3 | ENSG00000182809 | 0.500 | CRIP2 | Cysteine-rich protein 2 |
+| 4 | ENSG00000185024 | 0.456 | BRF1 | RNA polymerase III transcription factor |
+| 5 | ENSG00000198874 | 0.391 | TYW1 | tRNA-yW synthesizing protein 1 |
+| 6 | ENSG00000067365 | 0.364 | METTL22 | Methyltransferase-like 22 |
+| 7 | ENSG00000101181 | 0.302 | MTG2 | Mitochondrial ribosome-associated GTPase 2 |
+| 8 | ENSG00000197694 | 0.289 | SPTAN1 | Spectrin alpha chain, non-erythrocytic 1 |
+| 9 | ENSG00000100473 | 0.271 | COCH | Cochlin |
+| 10 | ENSG00000138758 | 0.238 | SEPTIN11 | Septin 11 |
 
 The top gene (ENSG00000135093) had nearly twice the importance of the second-ranked gene, suggesting a dominant role in treatment outcome prediction.
 
@@ -314,17 +314,23 @@ Larger, multi-site validation studies are needed to assess clinical utility and 
 ---
 
 ## Author Contributions
-[To be added]
+
+Dr. Siddalingaiah H S conceived the study, performed all data analysis, developed the machine learning models, generated all figures and tables, interpreted the results, and wrote the manuscript.
 
 ## Funding
-[To be added]
+
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
 
 ## Conflicts of Interest
 None declared.
 
 ## Data Availability
-Data: GEO accession GSE89403  
-Code: [GitHub repository to be added]
+
+**Data**: All data are publicly available from the Gene Expression Omnibus (GEO) under accession number GSE89403 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE89403).
+
+**Code**: All analysis code, trained models, and documentation are available at https://github.com/hssling/TB_Treatment_Failure_Prediction_by_Transcriptomics under MIT license.
+
+**Reproducibility**: Complete pipeline with version control, CI/CD workflows, and detailed documentation.
 
 ---
 
